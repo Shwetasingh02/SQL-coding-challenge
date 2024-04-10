@@ -19,7 +19,7 @@ insert into car(quantity,customer_id,product_id)values(2,1,1),(1,1,3),(3,2,2),(4
 
 
 insert into orders (id,date,total_price,shipping_address,customer_id)values(1,'2024-04-03',900,'mumbai',1),
-																		   (2,'2024-03-09',300,'MS',2),
+									   (2,'2024-03-09',300,'MS',2),								   (2,'2024-03-09',300,'MS',2),
                                                                            (3,'2024-03-04',700,'goa',4),
                                                                            (4,'2024-01-02',400,'chennai',3);
 
@@ -99,7 +99,7 @@ where total_price between 500 and 1000;
  
  -- 09 determine minimum stock quantity for each product
  
- select distinct name,min(stock_quantity)
+ select name,min(stock_quantity)
  from product
  group by name;
  
